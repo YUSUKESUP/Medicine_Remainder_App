@@ -5,7 +5,7 @@ import 'package:intl/intl.dart';
 class ToDoTile extends StatelessWidget {
   final String taskName;
   final String selectedImage;
-  String alarmTime;
+  final String alarmTime;
   Function(BuildContext)?  deleteFunction;
 
   ToDoTile({

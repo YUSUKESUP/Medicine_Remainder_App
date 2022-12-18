@@ -16,10 +16,10 @@ class _SelectCardState extends State<SelectCard> {
   int selectedIndex = 0;
 
   final List<CardItem> items = [
-    CardItem('assets/12361.png', true),
-    CardItem('assets/medical_syrup_kusuri.png', false),
-    CardItem('assets/medicine-2.png', false),
-    CardItem('assets/medicine_konagusuri.png', false),
+    CardItem('assets/12361.png'),
+    CardItem('assets/medical_syrup_kusuri.png'),
+    CardItem('assets/medicine-2.png'),
+    CardItem('assets/medicine_konagusuri.png'),
 
   ];
 
@@ -38,6 +38,7 @@ class _SelectCardState extends State<SelectCard> {
 
               setState(() {
                 selectedIndex = index;
+
 
               });
             },
@@ -70,6 +71,6 @@ class _SelectCardState extends State<SelectCard> {
 
 class CardItem {
   final String  image;
-  final bool  isChoose;
-  CardItem(this.image,this.isChoose);
+
+  CardItem(this.image,);
 }
